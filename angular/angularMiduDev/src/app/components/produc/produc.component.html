@@ -1,0 +1,9 @@
+<!-- HTML DEL COMPONENTE PRODUC -->
+<ng-template *ngIf="product">
+  <h2>{{product.title}}</h2>
+  <p>$ {{product.price}}</p>
+  <img [src] = "product.images[0]" alt="Imagen">
+</ng-template>
+<ng-template *ngIf="!product">
+  El producto no renderizo
+</ng-template>
