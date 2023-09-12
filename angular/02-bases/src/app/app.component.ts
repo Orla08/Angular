@@ -7,16 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public title: string= 'Hola mundo';
-  public counter: number= 10;
 
-  sumar():void {
-    this.counter++;
-  }
-  restar(value:number):void {
-    this.counter -= value;
-  }
-  resetear():void {
-    this.counter = 10;
-  }
 
 }
