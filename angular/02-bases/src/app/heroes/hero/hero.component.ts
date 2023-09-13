@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class HeroComponent {
 
+
   public name: string = 'ironMan';
   public age: number = 70;
 
@@ -17,6 +18,15 @@ export class HeroComponent {
 
   getDescription():string { //Metodo
     return `${this.name} -- ${this.age}`
+  }
+
+  changeHero():void {
+    this.name = 'Spiderman'
+  }
+
+
+  changeAge():void {
+    this.age = 23
   }
 
 }
