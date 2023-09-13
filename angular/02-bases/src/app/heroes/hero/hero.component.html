@@ -15,10 +15,20 @@
 </dl>
 
 <button class="btn btn-warning"
-(click)="changeHero()">
+(click)="changeHero()"
+*ngIf="activo"
+>
   Cambiar Nombre
 </button>
-<button class="btn btn-primary mx-2"
+
+<button *ngIf="activo2"
+class="btn btn-primary mx-2"
 (click)="changeAge()">
   Cambiar Edad
+</button>
+
+<button
+class="btn btn-primary mx-2"
+(click)="reset()">
+  Resetear
 </button>
