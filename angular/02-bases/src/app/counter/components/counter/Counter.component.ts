@@ -10,7 +10,7 @@ import { Component } from "@angular/core";
   <button (click)="sumar()">+</button>
   `
 }) //DECORADOR QUE TRANSFORMA CLASES EN COMPONENTES
-export class counterComponent {
+export class CounterComponent {
 
 
   public counter: number= 10;

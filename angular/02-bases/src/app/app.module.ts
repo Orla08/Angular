@@ -1,20 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { CounterModule } from './counter/Counter.module';
+import { HeroesModule } from './heroes/Heroes.module';
+
 import { AppComponent } from './app.component';
-import { counterComponent } from './counter/counter.component';
-import { HeroComponent } from './heroes/hero/hero.component';
-import { ListComponent } from './heroes/list/list.component';
 
 @NgModule({
-  declarations: [
+  declarations: [ //Aqui van los componentes
     AppComponent,
-    counterComponent,
-    HeroComponent,
-    ListComponent
   ],
-  imports: [
-    BrowserModule
+  imports: [ //Aqui van las importaciones de modulos y librerias
+    BrowserModule,
+    CounterModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
