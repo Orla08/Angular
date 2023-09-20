@@ -24,7 +24,8 @@ export class AddCharacterComponent {
     if (this.character.name.length === 0) return; //Si el nombre que mandas no tiene nada no devolveras nada
     this.onNewCharacter.emit(this.character) //Emite el objeto escrito en los inputs
 
-    this.character = {name: '', power: 0}
+    this.character = {name: '', power: 0} // Esto es para que se coloquen en blanco nuevamente los valores de los inputs
+    //De la forma this.character.name = '' esta mal igual con el power
   }
 
 

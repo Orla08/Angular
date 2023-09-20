@@ -2,14 +2,15 @@
 
 <div class="row">
   <div class="col-5">
-    <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+    <dbz-list [characterList]="dbzService.characters" (onDelete)="dbzService.onDeleteCharacter($event)"></dbz-list>
     <!-- Recuerda que este es un componente que ya esta declarado en el modulo de dbz -->
+    <!-- Lo que utilizaras dentro del componente dbz-list sera characterList para recorrer -->
   </div>
 
 
   <div class="col-7">
 
-    <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+    <dbz-add-character (onNewCharacter)="dbzService.onNewCharacter($event)"></dbz-add-character>
     <!-- Y de esta forma no necita ser expotado ya que se está utilizando directamente
     en el main page que es el que se exporta -->
   </div>
