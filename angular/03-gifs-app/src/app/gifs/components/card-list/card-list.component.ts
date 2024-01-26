@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GifsService } from '../../services/gifs.service';
 
 @Component({
   selector: 'gifs-card-list',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private gifs: GifsService) { }
 
   ngOnInit(): void {
   }
+
 
 }
